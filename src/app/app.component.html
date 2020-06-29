@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>DeepFryIt</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/accounts'"> Upload Files </a>
+      <a mat-button [routerLink]="'/create-account'"> Gallery </a>
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+      <span style="font-size: 12px;">DeepFryIt perfectly deep frys content </span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<app-image-upload></app-image-upload>
